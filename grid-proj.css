@@ -1,0 +1,115 @@
+f
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.card{
+  padding:20px;
+  border-radius:2px;
+}
+.title{
+  color:#3abdb0;
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+.teaser{
+  color:#e6c911;
+  padding-bottom: 18px;
+  opacity: 100%;
+}
+.text-teaser{
+  color: #1a1919;
+  opacity:70%;
+}
+.monthly{
+  padding-bottom: 18px;
+}
+.price{
+  font-size: 23px;
+  padding-bottom: 15px;
+}
+button{
+    padding:6px 3.2rem 3px 3.2rem;
+    display: flex;
+}
+.button{
+  margin:1.0rem 2.8rem;
+  color:#fff;
+  font-weight:800;
+  background-color:#f0d20e;
+  border:none;
+  border-radius:4px;
+}
+span{
+  font-size: 12px;
+  opacity:60%;
+}
+.why{
+   padding-bottom:1.1em;
+   line-height: 1em;
+}
+.container{
+  max-width:1440px;
+  
+  margin:20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  " join-us join-us"
+  " subsc why-us"
+  " footer footer";
+  
+}
+
+.join-us{
+  background-color: #fcfcfc;
+  grid-area: join-us;
+ 
+}
+.subsc{
+  background-color:#3abdb0;
+  color:#fff;
+  grid-area: subsc;
+}
+.why-us{
+  background-color: #66d1c6;
+  color:#fff;
+  opacity: 68%;
+  grid-area: why-us;
+}
+.attribution{
+text-align: center;
+}
+footer  a{
+  color:#000;
+  text-decoration: none;
+}
+@media(max-width:600px){
+  .container{
+    font-size: 13px;
+    grid-template-columns: 1fr;
+    max-width:375px ;
+  }
+  .join-us{
+    grid-column: 1;
+  }
+  .subsc{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .why-us{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+}
